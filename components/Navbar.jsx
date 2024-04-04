@@ -1,19 +1,18 @@
 "use client";
-import React from "react";
+
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGoogle } from "react-icons/fa";
-import logo from "@/assets/images/logo-white.png";
+import logo from "@/assets/images/logo.png";
 import profileImageDefault from "@/assets/images/profile.png";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isProfileMenuOpen, setProfileMenuOpen] = useState(false);
-  const pathname = usePathname();
-  // console.log(pathname);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const pathname = usePathname();
   return (
     <nav className="bg-blue-700 border-b border-blue-500">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -90,7 +89,7 @@ const Navbar = () => {
           </div>
 
           {/* <!-- Right Side Menu (Logged Out) --> */}
-          {isLoggedIn === false && (
+          {!isLoggedIn && (
             <div className="hidden md:block md:ml-6">
               <div className="flex items-center">
                 <button className="flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2">
@@ -226,7 +225,7 @@ const Navbar = () => {
                 Add Property
               </Link>
             )}
-            {isLoggedIn === false && (
+            {!isLoggedIn && (
               <button className="flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 my-4">
                 <FaGoogle className="mr-2" />
                 <span>Login or Register</span>

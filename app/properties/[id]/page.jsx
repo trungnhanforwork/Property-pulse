@@ -1,8 +1,5 @@
-"use client";
-import React from "react";
-
-const PropertiesPage = () => {
-  return <div>Property</div>;
+const PropertyPage = () => {
+  return <div>PropertyPage</div>;
 };
 
-export default PropertiesPage;
+export default PropertyPage;

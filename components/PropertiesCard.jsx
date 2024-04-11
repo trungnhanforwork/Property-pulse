@@ -12,17 +12,17 @@ const PropertyCard = ({ property }) => {
   const getRateDisplay = () => {
     const { rates } = property;
     if (rates.monthly) {
-      return `${rates.monthly.toLocaleString()}/mo`;
+      return `${rates.monthly.toLocaleString()} VND / mo`;
     } else if (rates.nightly) {
-      return `${rates.nightly.toLocaleString()}/ni`;
+      return `${rates.nightly.toLocaleString()} VND / ni`;
     } else if (rates.weekly) {
-      return `${rates.weekly.toLocaleString()}/we`;
+      return `${rates.weekly.toLocaleString()} VND / we`;
     }
   };
   return (
     <div className="rounded-xl shadow-md relative">
       <Image
-        src={`/images/properties/${property.images[0]}`}
+        src={property.images[0]}
         alt=""
         height={0}
         width={0}
@@ -35,7 +35,7 @@ const PropertyCard = ({ property }) => {
           <h3 className="text-xl font-bold">{property.name}</h3>
         </div>
         <h3 className="absolute top-[10px] right-[10px] bg-white px-4 py-2 rounded-lg text-blue-500 font-bold text-right md:text-center lg:text-right">
-          ${getRateDisplay()}
+          {getRateDisplay()}
         </h3>
 
         <div className="flex justify-center gap-4 text-gray-500 mb-4">

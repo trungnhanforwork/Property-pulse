@@ -26,7 +26,9 @@ async function fetchPropertyById(id) {
     if (!apiDomain) {
       return null;
     }
-    const response = await fetch(`${apiDomain}/properties/${id}`);
+    const response = await fetch(`${apiDomain}/properties/${id}`, {
+      cache: "no-store",
+    });
     if (!response.ok) {
       throw new Error("Failed to fetch data");
     }

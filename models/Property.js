@@ -15,7 +15,7 @@ const PropertySchema = new Schema(
       type: String,
       required: true,
     },
-    descpirtion: {
+    description: {
       type: String,
     },
     location: {
@@ -74,7 +74,7 @@ const PropertySchema = new Schema(
         required: true,
       },
     },
-    image: [{ type: String }],
+    images: [{ type: String }],
     is_featured: { type: Boolean, default: false },
   },
   {

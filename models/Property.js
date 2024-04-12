@@ -22,10 +22,10 @@ const PropertySchema = new Schema(
       street: {
         type: String,
       },
-      city: {
+      district: {
         type: String,
       },
-      state: {
+      city: {
         type: String,
       },
       zipcode: {

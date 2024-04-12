@@ -25,7 +25,7 @@ const InfoBoxes = () => {
             buttonInfo={{
               text: "Add Properties",
               link: "/properties/add",
-              backgroundColor: "bg-blue-600",
+              backgroundColor: "bg-blue-800",
             }}
           >
             List your properties and reach potential tentants. Rent as an an

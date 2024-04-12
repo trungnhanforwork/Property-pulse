@@ -16,8 +16,8 @@ const PropertyDetails = ({ property }) => {
         <div className="text-gray-500 mb-4 flex align-middle justify-center md:justify-start">
           <FaMapMarker className="text-lg text-orange-700 mr-2"></FaMapMarker>
           <p className="text-orange-700">
-            {property.location.street}, {property.location.city},{" "}
-            {property.location.state}
+            {property.location.street}, {property.location.district},{" "}
+            {property.location.city}
           </p>
         </div>
 

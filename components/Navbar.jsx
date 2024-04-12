@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGoogle } from "react-icons/fa";
-import logo from "@/assets/images/logo.png";
+import logo from "@/assets/images/logo-white.png";
 import profileImageDefault from "@/assets/images/profile.png";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
@@ -25,7 +25,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-blue-700 border-b border-blue-500">
+    <nav className="bg-blue-800 border-b border-blue-500">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-20 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
@@ -234,7 +234,7 @@ const Navbar = () => {
               href="/"
               className={`${
                 pathname === "/" ? "bg-black" : ""
-              } text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
+              } text-gray-300 hover:bg-gray-700 hover:text-white block rounded-2xl px-3 py-2 text-base font-medium`}
             >
               Home
             </Link>
@@ -242,7 +242,7 @@ const Navbar = () => {
               href="/properties"
               className={`${
                 pathname === "/properties" ? "bg-black" : ""
-              } text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
+              } text-gray-300 hover:bg-gray-700 hover:text-white block rounded-2xl px-3 py-2 text-base font-medium`}
             >
               Properties
             </Link>
@@ -251,7 +251,7 @@ const Navbar = () => {
                 href="/properties/add"
                 className={`${
                   pathname === "/properties/add" ? "bg-black" : ""
-                } text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium`}
+                } text-gray-300 hover:bg-gray-700 hover:text-white block rounded-2xl px-3 py-2 text-base font-medium`}
               >
                 Add Property
               </Link>

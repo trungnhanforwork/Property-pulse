@@ -8,28 +8,28 @@ const PropertyAddForm = () => {
   }, []);
 
   const [fields, setFields] = useState({
-    type: "Room",
-    name: "M Village",
+    type: "",
+    name: "",
     description: "",
     location: {
-      street: "Ly Chinh Thang",
-      city: "Ho Chi Minh",
-      state: "",
+      street: "",
+      district: "",
+      city: "",
       zipcode: "",
     },
-    beds: "2",
-    baths: "2",
-    square_feet: "25",
+    beds: "",
+    baths: "",
+    square_feet: "",
     amenities: [],
     rates: {
       weekly: "",
       monthly: "",
-      nightly: "1100000",
+      nightly: "",
     },
     seller_info: {
-      name: "Nguyen Quang Trung Nhan",
-      email: "nqtn2808@gmail.com",
-      phone: "0971694818",
+      name: "",
+      email: "",
+      phone: "",
     },
     images: [],
   });
@@ -172,11 +172,11 @@ const PropertyAddForm = () => {
           />
           <input
             type="text"
-            id="state"
-            name="location.state"
+            id="district"
+            name="location.district"
             className="border rounded w-full py-2 px-3 mb-2"
             placeholder="State"
-            value={fields.location.state}
+            value={fields.location.district}
             onChange={handleChange}
           />
           <input
@@ -557,7 +557,7 @@ const PropertyAddForm = () => {
 
         <div>
           <button
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
+            className="bg-blue-800 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
             type="submit"
           >
             Add Property

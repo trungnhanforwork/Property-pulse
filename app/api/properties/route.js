@@ -17,7 +17,7 @@ export const GET = async (request) => {
   }
 };
 
-//POST
+// POST
 export const POST = async (request) => {
   try {
     await connectDB();
@@ -54,8 +54,8 @@ export const POST = async (request) => {
       description: formData.get("description"),
       location: {
         street: formData.get("location.street"),
+        district: formData.get("location.district"),
         city: formData.get("location.city"),
-        state: formData.get("location.state"),
         zipcode: formData.get("location.zipcode"),
       },
       beds: formData.get("beds"),

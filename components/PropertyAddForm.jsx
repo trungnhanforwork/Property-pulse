@@ -162,21 +162,21 @@ const PropertyAddForm = () => {
           />
           <input
             type="text"
+            id="district"
+            name="location.district"
+            className="border rounded w-full py-2 px-3 mb-2"
+            placeholder="State"
+            value={fields.location.district}
+            onChange={handleChange}
+          />
+          <input
+            type="text"
             id="city"
             name="location.city"
             className="border rounded w-full py-2 px-3 mb-2"
             placeholder="City"
             required
             value={fields.location.city}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            id="district"
-            name="location.district"
-            className="border rounded w-full py-2 px-3 mb-2"
-            placeholder="State"
-            value={fields.location.district}
             onChange={handleChange}
           />
           <input

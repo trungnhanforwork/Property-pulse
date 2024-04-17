@@ -11,18 +11,21 @@ const Footer = () => {
           <Image src={logo} alt="Logo" className="h-8 w-auto" />
         </div>
         <div className="flex flex-wrap justify-center md:justify-start mb-4 md:mb-0">
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-4 justify-center md:justify-start">
             <li>
               <Link href="/properties">Properties</Link>
             </li>
             <li>
               <Link href="/terms">Terms of Service</Link>
             </li>
+            <li>
+              <Link href="/supports">Support</Link>
+            </li>
           </ul>
         </div>
         <div>
           <p className="text-sm text-gray-500 mt-2 md:mt-0">
-            &copy; 2024 PropertyPulse. All rights reserved.
+            &copy; 2024 PropertyPulse.
           </p>
         </div>
       </div>

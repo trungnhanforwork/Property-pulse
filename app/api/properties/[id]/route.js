@@ -102,7 +102,6 @@ export const PUT = async (request, { params }) => {
         phone: formData.get("seller_info.phone"),
       },
       owner: userId,
-      // validatedImages,
     };
 
     // Update property in database

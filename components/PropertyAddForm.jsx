@@ -165,7 +165,7 @@ const PropertyAddForm = () => {
             id="district"
             name="location.district"
             className="border rounded w-full py-2 px-3 mb-2"
-            placeholder="State"
+            placeholder="District"
             value={fields.location.district}
             onChange={handleChange}
           />

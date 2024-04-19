@@ -79,11 +79,12 @@ const ProfilePage = () => {
             <div className="md:w-1/4 mx-20 mt-10">
               <div className="mb-4">
                 <Image
-                  className="md:h-48 md:w-48 rounded-full mx-auto md:mx-0"
+                  className="w-48 h-48 rounded-full mx-auto md:mx-0"
                   src={profileImage || profileDefaultImage}
                   alt="User"
-                  width={32}
-                  height={32}
+                  width={0}
+                  height={0}
+                  sizes="50vw"
                 />
               </div>
               <h2 className="text-xl mb-4">
